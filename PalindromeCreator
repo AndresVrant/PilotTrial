@@ -1,0 +1,8 @@
+def create_palindrome(word):
+    palindrome = word + word[::-1]
+    return palindrome
+
+if __name__ == "__main__":
+    input_word = input("Enter a word: ")
+    palindrome_result = create_palindrome(input_word)
+    print(f"The palindrome for '{input_word}' is '{palindrome_result}'")
